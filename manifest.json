@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "RamScroll",
+  "version": "0.2",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+  	{
+    "matches": ["*://*.facebook.com/*"],
+    "js": ["jquery-2.2.3.js", "content.js"]
+  	}
+  ]
+}
